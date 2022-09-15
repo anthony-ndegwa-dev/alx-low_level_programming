@@ -1,15 +1,14 @@
 #include <unistd.h>
 #include <stdio.h>
-#include <stdio.h>
+
 /**
- * main - Entry point
+ * _putchar - writes character c to stdout
  *
- * Return: Always 0
+ * Return: On  success 1
  */
 
-int main(void)
+int _putchar(char c)
 {
-	printf('_putchar\n');
+	return (write(1, &c, 1));
 
-	return (0);
 }
