@@ -4,7 +4,7 @@
 /**
  * _putchar - writes character c to stdout
  *
- * Return: On  success 1
+ * Return: On success 1
  */
 
 int _putchar(char c)
