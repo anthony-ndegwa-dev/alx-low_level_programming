@@ -13,6 +13,7 @@ void print_numbers(void)
 	while (num < 10)
 	{
 		_putchar(num);
+		num++
 	_putchar('\n');
 	}
 }
