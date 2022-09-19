@@ -12,12 +12,14 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *vex = dest;
+	int x = 0;
 
-	while (*src)
+	while (*(src + x))
 	{
-		*dest++ = *src++;
+		*(dest + x) = *(src + x);
+		x++;
 	}
+	*(dest + x) = '\0';
 
-	return (vex);
+	return (dest);
 }
