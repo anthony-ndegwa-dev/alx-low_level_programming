@@ -12,11 +12,11 @@ void print_rev(char *s)
 {
 	int len = 0;
 
-	while (s[len] != '\0')
+	while (*s[len] != '\0')
 		len++;
 
 	while (len)
-		printf(s[--len]);
+		_putchar(*s[--len]);
 
-	printf('\n');
+	_putchar('\n');
 }
