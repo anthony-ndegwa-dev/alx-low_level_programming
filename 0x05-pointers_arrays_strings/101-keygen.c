@@ -38,6 +38,6 @@ int main(void)
 		}
 	}
 	p[a] = '\0';
-	_putchar("%s", p);
+	printf("%s", p);
 	return (0);
 }
