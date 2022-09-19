@@ -16,5 +16,5 @@ char *_strcpy(char *dest, char *src)
 
 	while (*src)
 		*dest++ = *src++;
-	return (vex);
+	return (*vex);
 }
