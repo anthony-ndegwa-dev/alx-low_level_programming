@@ -11,8 +11,10 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int srclen = 0, x = 0;
-	char *vem = dest, *start = src;
+	int srclen = 0;
+	int x = 0;
+	char *vem = dest;
+	char *start = src;
 
 	while (*src)
 	{
