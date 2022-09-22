@@ -10,7 +10,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *hem =dest;
+	char *hem = dest;
 
 	while (*dest)
 		dest++;
