@@ -27,12 +27,12 @@ char *_strncat(char *dest, char *src, int n)
 
 	if (n > srclen)
 		n = srclen;
+
 	src = start;
 
 	for (; x < n; x++)
 		*dest++ = *src++;
 
 	*dest = '\0';
-	
 	return (vem);
 }
