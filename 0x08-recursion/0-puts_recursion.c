@@ -5,9 +5,9 @@
  * @s: The input string to be printed.
  * Return: Void
  */
+
 void _puts_recursion(char *s)
 {
-	_putchar();
 	if (*s)
 	{
 		_putchar(*s);
