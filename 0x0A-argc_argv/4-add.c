@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - A program that adds positive numbers
@@ -10,23 +9,23 @@
  * Return: Always 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int num, result = 0, i;
+	int num, digit, sum = 0;
 
-	while (argc-- > 1)
+	for (num = 1; num < argc; num++)
 	{
-		for (i = 0; argv[argc][i]; i++)
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			if (!(isdigit(argv[argc][i])))
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		num = atoi(argv[argc])
-			result += num;
+		sum += atoi(argv[num]);
 	}
-	printf("%d\n", result);
+	printf("%d\n", sum);
 	return (0);
 }
+
