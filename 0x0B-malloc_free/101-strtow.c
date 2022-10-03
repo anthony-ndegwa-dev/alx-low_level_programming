@@ -89,12 +89,13 @@ char **strtow(char *str)
 			free(strings);
 			return (NULL);
 		}
-		
+
 		for (l = 0; l < letters; l++)
 			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 	}
 	strings[w] = NULL;
+
 	return (strings);
 }
 
