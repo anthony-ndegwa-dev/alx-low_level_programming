@@ -25,6 +25,4 @@ int main(int argc, char **argv)
 		printf("%d\n", ansa);
 		return (0);
 	}
-
-	return (ansa);
 }
