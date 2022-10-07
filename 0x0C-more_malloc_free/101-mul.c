@@ -141,9 +141,9 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 }
 
 /**
- * add_nums - Adds the numbers stored in two strings.
- * @final_prod: The buffer storing the running final product.
- * @next_prod: The next product to be added.
+ * add_nums - Adds numbers stored in two strings.
+ * @final_prod: The buffer storing running final product.
+ * @next_prod: Next product to be added.
  * @next_len: The length of next_prod.
  */
 
