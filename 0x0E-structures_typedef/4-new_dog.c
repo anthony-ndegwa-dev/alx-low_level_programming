@@ -8,7 +8,6 @@
  * @owner: Dog's owner
  * Return: a pointer to newly created dog structure
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
@@ -44,6 +43,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->name = cpyname;
 	new_dog->age = age;
 	new_dog->owner = cpyowner;
-
 	return (new_dog);
 }
