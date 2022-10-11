@@ -6,7 +6,7 @@
  * @name: Dog's name
  * @age: Dog's age
  * @owner: Dog's owner
- * Return: returns a pointer to newly created dog structure
+ * Return: a pointer to newly created dog structure
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
