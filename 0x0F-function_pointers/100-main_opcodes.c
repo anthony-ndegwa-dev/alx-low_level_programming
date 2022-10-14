@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
 	}
 
 	bytes = atoi(argv[1]);
-
 	if (bytes < 0)
 	{
 		printf("Error\n");
@@ -41,7 +40,6 @@ int main(int argc, char *argv[])
 
 		address++;
 	}
-
 	printf("\n");
 
 	return (0);
