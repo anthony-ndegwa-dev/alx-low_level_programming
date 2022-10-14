@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int bytes, i;
-	int ((*address)(int, char **)) = main;
+	int (*address)(int, char **) = main;
 	unsigned char opcode;
 
 	if (argc != 2)
