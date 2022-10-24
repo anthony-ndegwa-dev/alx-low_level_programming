@@ -30,3 +30,19 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new;
 	return (new);
 }
+
+/**
+ * _strlen - finds the length of a string
+ * @str: string to find the length of
+ *
+ * Return: length of string
+ */
+
+unsigned int _strlen(char *str)
+{
+	unsigned int x;
+
+	for (x = 0; str[x]; x++)
+		;
+	return (x);
+}
