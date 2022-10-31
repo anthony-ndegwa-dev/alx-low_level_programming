@@ -12,7 +12,20 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int x = 0, y = 1;
 	int len;
 
-	if (b == '\0')
+	if (b == '\n')
 		return (0);
 
-	for 
+	for (len = 0; b[len];)
+		len++;
+
+	for (len -= 1; len >= 0; len--)
+	{
+		if (b[len] != '0' && b[len] != '1')
+			return (0);
+
+		x += (b[len] - '0') * y;
+		y *= 2;
+	}
+
+	return (x);
+}	
