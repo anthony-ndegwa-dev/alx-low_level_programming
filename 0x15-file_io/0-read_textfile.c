@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/uio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stddef.h>
 
 /**
  * read_textfile - Reads a text file and prints it to POSIX stdout.
@@ -23,9 +29,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 		return (0);
 
-	o = popen(filename, O_RDONLY);
-	r = fread(o, buffer, letters);
-	w = fwrite(STDOUT_FILENO, buffer, r);
+	o = open(filename, O_RDONLY);
+	r = read(o, buffer, letters);
+	w = write(STDOUT_FILENO, buffer, r);
 
 	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
@@ -34,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	free(buffer);
-	pclose(o);
+	close(o);
 
 	return (w);
 }
