@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * read_textfile - Reads a text file and prints it to POSIX stdout.
