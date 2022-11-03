@@ -77,7 +77,8 @@ int main(int argc, char *argv[])
 		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: Can't read from file %s\n", argv[1]);
+					"Error: Can't read from file %s\n",
+				       	argv[1]);
 			free(buffer);
 			exit(98);
 		}
