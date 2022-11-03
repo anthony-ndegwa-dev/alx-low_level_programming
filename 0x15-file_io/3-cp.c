@@ -4,7 +4,7 @@
 #include <fcntl.h>
 
 char *create_buffer(char *file);
-void close_file(int z);
+void close_file(int fd);
 
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
@@ -30,17 +30,17 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Closes file descriptors.
- * @z: The file descriptor to be closed.
+ * @fd: The file descriptor to be closed.
  */
 
-void close_file(int z)
+void close_file(int fd)
 {
 	int x;
 
-	x = close(z);
+	x = close(fd);
 	if (x == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", z);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
