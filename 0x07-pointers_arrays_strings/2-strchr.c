@@ -7,7 +7,6 @@
  *
  * Returns: a pointer to the character c in the string s
  */
-
 char *_strchr(char *s, char c)
 {
 	int index;
