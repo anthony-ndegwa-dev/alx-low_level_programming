@@ -5,7 +5,7 @@
  * @s: The string to be searched.
  * @accept: input character to be located in string s.
  *
- * Returns: the number of bytes in the initial segment of s
+ * Return: the number of bytes in the initial segment of s
  * 		which consist only of bytes from accept.
  */
 
