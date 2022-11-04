@@ -5,7 +5,7 @@
  * @s: string to be searched.
  * @c: character to be located.
  *
- * Returns: pointer to the first occurrence of character c
+ * Return: pointer to the first occurrence of character c
  * in the string s, or NULL if the character is not found.
  */
 
