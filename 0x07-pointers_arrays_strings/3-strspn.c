@@ -27,10 +27,12 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			accept++;
 		}
+
 		s++;
 		accept = alpha;
 		if (flag == 0)
 			break;
 	}
+
 	return (count);
 }
