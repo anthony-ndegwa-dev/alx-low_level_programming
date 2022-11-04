@@ -18,5 +18,5 @@ char *_strchr(char *s, char c)
 			return (s + index);
 	}
 
-	return (index);
+	return ('\0');
 }
