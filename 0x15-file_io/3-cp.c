@@ -7,7 +7,7 @@
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: the file buffer is storing chars for.
  *
- * Return: A pointer to the newly-allocated buffer.
+ * Return: A pointer to the newly allocated buffer.
  */
 
 char *create_buffer(char *file)
@@ -48,7 +48,6 @@ void close_file(int fd)
  * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
- *
  * Description: if argument count is incorrect - exit code 97.
  * if file_from doesn't exist or can't be read - exit code 98.
  * if file_to cannot be created or written to - exit code 99.
