@@ -37,7 +37,8 @@ void close_file(int fd)
 	x = close(fd);
 	if (x == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, 
+				"Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -48,6 +49,10 @@ void close_file(int fd)
  * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
+ * Description: if argument count is incorrect - exit code 97.
+ * if file_from doesn't exist or can't be read - exit code 98.
+ * if file_to cannot be created or written to - exit code 99.
+ * if file_to or file_from cannot be closed - exit code 100.
  */
 
 int main(int argc, char *argv[])
@@ -79,7 +84,8 @@ int main(int argc, char *argv[])
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: Can't write to %s\n", argv[2]);
+					"Error: Can't write to %s\n",
+				       	argv[2]);
 			free(buffer);
 			exit(99);
 		}
