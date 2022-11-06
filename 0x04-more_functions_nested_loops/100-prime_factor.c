@@ -19,7 +19,7 @@ int main(void)
 			continue;
 		}
 
-		for (div = 3; div < (prime / 2); div += 2)
+		for (index = 3; index < (prime / 2); index += 2)
 		{
 			if ((prime % index) == 0)
 				prime /= index;
