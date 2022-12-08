@@ -3,8 +3,8 @@
 /**
  * print_dlistint - prints all elements of a
  * dlistint_t list
- * @h: head of the list
  *
+ * @h: head of the list *
  * Return: the number of nodes
  */
 
