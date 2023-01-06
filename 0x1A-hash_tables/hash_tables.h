@@ -43,5 +43,7 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size);
 /* 3-hash_table_set.c */
 hash_node_t *add_n_hash(hash_node_t **, const char *, const char *);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+/* 4-hash_table_get.c */
+char *hash_table_get(const hash_table_t *ht, const char *key);
 
 #endif
