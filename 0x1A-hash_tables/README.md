@@ -25,7 +25,7 @@ Requirements
     Don’t forget to push your header file
     All your header files should be include guarded
 
-Please use these data structures for this project:
+Use these data structures for this project:
 
 /**
  * struct hash_node_s - Node of a hash table
