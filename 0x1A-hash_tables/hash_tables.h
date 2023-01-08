@@ -1,5 +1,5 @@
-#ifndef _HASH_TABLES_
-#define _HASH_TABLES_
+#ifndef HASH_TABLES_H
+#define HASH_TABLES_H
 
 #include <stdlib.h>
 #include <string.h>
