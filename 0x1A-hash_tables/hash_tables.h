@@ -49,6 +49,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key);
 void hash_table_print(const hash_table_t *ht);
 /* 6-hash_table_delete.c */
 void hash_table_delete(hash_table_t *ht);
-/* 100-sorted_hash_table.c */
 
 #endif
